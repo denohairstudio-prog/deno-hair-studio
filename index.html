@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Deno Hair Studio | Vân Hà - Thư Lâm - Hà Nội</title>
+  <meta name="description" content="Deno Hair Studio - Cắt, uốn, nhuộm, phục hồi tóc tại Vân Hà - Thư Lâm - Hà Nội. Đặt lịch: 0982928765.">
+  <style>
+    :root{--ink:#171717;--muted:#6b6762;--cream:#f6f2ec;--line:#e7e0d7;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:2px}
+    .brand img{width:48px;height:48px;object-fit:contain}.links{display:flex;gap:25px;font-size:14px}
+    .hero{background:var(--cream);padding:76px 0 70px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+    .eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:var(--muted)}
+    h1{font-size:clamp(45px,7vw,82px);line-height:.95;margin:16px 0 22px;letter-spacing:-4px}
+    .hero p{font-size:18px;color:var(--muted);max-width:570px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:14px 22px;border:1px solid var(--ink);font-weight:700}
+    .btn.dark{background:var(--ink);color:#fff}.hero-logo{width:100%;max-width:500px;display:block;margin:auto}
+    section{padding:85px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+    h2{font-size:38px;line-height:1.1;margin:0;letter-spacing:-1px}.sub{color:var(--muted);max-width:500px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+    .service{padding:25px 5px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
+    .service strong{font-size:18px}.price{font-weight:700;white-space:nowrap}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:310px;object-fit:cover;display:block}
+    .gallery img:nth-child(1),.gallery img:nth-child(4){height:390px}
+    .offer{background:var(--ink);color:#fff;padding:55px;border-radius:2px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .offer h2{font-size:42px}.offer p{color:#d4d0ca;margin-bottom:0}.offer .btn{background:#fff;border-color:#fff;color:var(--ink)}
+    .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+    .card{background:#fff;padding:30px;border:1px solid var(--line)}.card h3{margin-top:0;font-size:22px}
+    .contact-row{padding:12px 0;border-bottom:1px solid var(--line)}.contact-row:last-child{border-bottom:0}
+    footer{padding:30px 0;font-size:13px;color:var(--muted);text-align:center}
+    .float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--ink);color:#fff;padding:14px 18px;font-weight:700;box-shadow:0 8px 25px rgba(0,0,0,.18)}
+    @media(max-width:800px){.links{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.hero{padding-top:50px}.hero-logo{max-width:360px}.services{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img,.gallery img:nth-child(1),.gallery img:nth-child(4){height:260px}.offer{grid-template-columns:1fr;padding:35px}.offer h2{font-size:32px}section{padding:60px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top"><img src="images/logo.png" alt="Deno Hair Studio"><span>DENO</span></a>
+      <div class="links"><a href="#services">Dịch vụ</a><a href="#gallery">Tác phẩm</a><a href="#offer">Ưu đãi</a><a href="#contact">Liên hệ</a></div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Deno Hair Studio · Since 2025</div>
+        <h1>Đẹp theo<br>cách của bạn.</h1>
+        <p>Không chỉ là một kiểu tóc — đó là phong cách khiến bạn tự tin hơn mỗi ngày.</p>
+        <div class="buttons">
+          <a class="btn dark" href="tel:0982928765">ĐẶT LỊCH · 0982 928 765</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/VYKqUYZe9LA9oxNeA?g_st=ic">CHỈ ĐƯỜNG</a>
+        </div>
+      </div>
+      <img class="hero-logo" src="images/logo.png" alt="Deno Hair Studio logo">
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Dịch vụ & bảng giá</h2>
+        <div class="sub">Tư vấn kiểu tóc phù hợp với khuôn mặt, chất tóc và phong cách của bạn.</div>
+      </div>
+      <div class="services">
+        <div class="service"><strong>Cắt tóc nữ</strong><span class="price">200.000đ</span></div>
+        <div class="service"><strong>Gội + sấy</strong><span class="price">80.000đ</span></div>
+        <div class="service"><strong>Nhuộm</strong><span class="price">từ 599.000đ</span></div>
+        <div class="service"><strong>Uốn</strong><span class="price">từ 599.000đ</span></div>
+        <div class="service"><strong>Phục hồi</strong><span class="price">từ 299.000đ</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Tác phẩm tại Deno</h2>
+        <div class="sub">Một vài kiểu tóc đã thực hiện tại salon.</div>
+      </div>
+      <div class="gallery">
+        <img src="images/hair-1.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-2.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-3.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-4.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-5.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-6.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-7.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+        <img src="images/hair-8.jpeg" alt="Tóc nữ tại Deno Hair Studio" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="offer">
+    <div class="wrap">
+      <div class="offer">
+        <div>
+          <div class="eyebrow" style="color:#b9b4ad">ƯU ĐÃI</div>
+          <h2>Đặt lịch hôm nay<br>để được tư vấn kiểu tóc.</h2>
+          <p>Liên hệ trực tiếp để hỏi giá theo độ dài và chất tóc. Giá dịch vụ uốn/nhuộm có thể thay đổi theo tình trạng tóc.</p>
+        </div>
+        <a class="btn" href="tel:0982928765">GỌI 0982 928 765</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head"><h2>Ghé Deno</h2><div class="sub">Deno Hair Studio · Since 2025</div></div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Thông tin salon</h3>
+          <div class="contact-row"><strong>Địa chỉ</strong><br>Vân Hà - Thư Lâm - Hà Nội</div>
+          <div class="contact-row"><strong>Điện thoại</strong><br><a href="tel:0982928765">0982 928 765</a></div>
+          <div class="contact-row"><strong>Đặt lịch</strong><br>Gọi điện trực tiếp để chọn giờ phù hợp.</div>
+        </div>
+        <div class="card">
+          <h3>Tìm đường</h3>
+          <p>Mở vị trí salon trên Google Maps:</p>
+          <a class="btn dark" target="_blank" rel="noopener" href="https://maps.app.goo.gl/VYKqUYZe9LA9oxNeA?g_st=ic">MỞ GOOGLE MAPS →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="float" href="tel:0982928765">☎ Đặt lịch</a>
+<footer>© 2025–2026 Deno Hair Studio · Vân Hà - Thư Lâm - Hà Nội</footer>
+</body>
+</html>
